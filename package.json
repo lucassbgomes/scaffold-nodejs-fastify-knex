@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "engines": {
-    "node": ">=18"
+    "node": ">=18 <21"
   },
   "scripts": {
     "build": "tsup src",
