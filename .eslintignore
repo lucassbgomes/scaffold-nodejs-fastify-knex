@@ -1,0 +1,5 @@
+# eslint ignore
+
+node_modules
+build
+coverage

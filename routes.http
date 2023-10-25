@@ -1,0 +1,28 @@
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+  "first_name": "Lucas",
+  "last_name": "Gomes",
+  "user_name": "lucasgomes",
+  "email": "lucas.pfgomes@gmail.com",
+  "password": "123456789"
+}
+
+###
+GET http://localhost:3333/users
+
+###
+PUT http://localhost:3333/users/760741e1-01b2-4890-91a8-fff6902429d4
+Content-Type: application/json
+
+{
+  "first_name": "Lucas",
+  "last_name": "Gomes",
+  "user_name": "lucasgomes",
+  "email": "lucas.sbgomes@gmail.com",
+  "password": "123456789",
+}
+
+###
+DELETE http://localhost:3333/users/760741e1-01b2-4890-91a8-fff6902429d4
