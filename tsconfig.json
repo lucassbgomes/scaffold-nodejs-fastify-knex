@@ -3,6 +3,12 @@
     "target": "ES2020",
     "module": "CommonJS",
     "allowJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
     "outDir": "dist",
     "rootDir": "src",
     "esModuleInterop": true,

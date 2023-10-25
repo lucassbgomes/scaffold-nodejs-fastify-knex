@@ -17,33 +17,35 @@
     "format:fix": "prettier --write --ignore-path .gitignore .",
     "test": "vitest"
   },
-  "keywords": [],
+  "keywords": [
+    "node.js",
+    "fastify",
+    "knex"
+  ],
   "author": "Lucas Santa Bárbara Gomes",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "@fastify/cookie": "^9.1.0",
-    "dotenv": "^16.3.1",
-    "fastify": "^4.24.3",
-    "knex": "^3.0.1",
-    "pg": "^8.11.3",
-    "zod": "^3.22.4"
+    "@fastify/cookie": "9.1.0",
+    "dotenv": "16.3.1",
+    "fastify": "4.24.3",
+    "knex": "3.0.1",
+    "pg": "8.11.3",
+    "zod": "3.22.4"
   },
   "devDependencies": {
-    "@types/node": "^20.8.7",
-    "@types/supertest": "^2.0.15",
-    "@typescript-eslint/eslint-plugin": "^6.8.0",
-    "@typescript-eslint/parser": "^6.8.0",
-    "eslint": "^8.52.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "prettier": "^3.0.3",
-    "rimraf": "^5.0.5",
-    "sqlite3": "^5.1.6",
-    "supertest": "^6.3.3",
-    "ts-node": "^10.9.1",
-    "tsup": "^7.2.0",
-    "tsx": "^3.14.0",
-    "typescript": "^5.2.2",
-    "vitest": "^0.34.6"
+    "@types/node": "20.8.9",
+    "@types/supertest": "2.0.15",
+    "@typescript-eslint/eslint-plugin": "6.9.0",
+    "@typescript-eslint/parser": "6.9.0",
+    "eslint": "8.52.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-prettier": "5.0.1",
+    "prettier": "3.0.3",
+    "sqlite3": "5.1.6",
+    "supertest": "6.3.3",
+    "tsup": "7.2.0",
+    "tsx": "3.14.0",
+    "typescript": "5.2.2",
+    "vitest": "0.34.6"
   }
 }

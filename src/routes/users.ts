@@ -1,12 +1,12 @@
 import { FastifyInstance } from 'fastify';
 import { randomUUID } from 'node:crypto';
 
-import { knex } from '../database/knex';
+import { knex } from '@/database/knex';
 import {
   parseUserBodyPatchSchema,
   parseUserBodySchema,
   parseUserParamsSchema,
-} from '../types/users';
+} from '@/types/users';
 
 export async function usersRoutes(app: FastifyInstance) {
   app.get('/', async () => {

@@ -1,5 +1,5 @@
 import setupKnex, { Knex } from 'knex';
-import { env } from '../env';
+import { env } from '@/env';
 
 const connection =
   env.DATABASE_CLIENT === 'sqlite'

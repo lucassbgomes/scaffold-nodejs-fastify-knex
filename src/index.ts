@@ -1,5 +1,5 @@
-import { env } from './env';
-import { app } from './app';
+import { env } from '@/env';
+import { app } from '@/app';
 
 app
   .listen({
@@ -7,5 +7,5 @@ app
     port: env.PORT,
   })
   .then(() => {
-    console.log('HTTP app Running!');
+    console.log('🟢 HTTP app Running!');
   });

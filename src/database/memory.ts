@@ -1,25 +1,25 @@
 import { randomUUID } from 'node:crypto';
-import { VideoData } from '../types/video';
+import { UsersData } from '@/types/users';
 
 export class DatabaseMemory {
-  #videos: Map<string, VideoData> = new Map();
+  #users: Map<string, UsersData> = new Map();
 
   list(search?: string) {
-    return Array.from(this.#videos.entries())
-      .map((video) => {
-        const id = video[0];
-        const data = video[1];
+    return Array.from(this.#users.entries())
+      .map((user) => {
+        const id = user[0];
+        const data = user[1];
 
         return {
           id,
           ...data,
         };
       })
-      .filter((video) => {
+      .filter((user) => {
         if (search) {
           return (
-            video.title.toLowerCase().includes(search.toLowerCase()) ||
-            video.description.toLowerCase().includes(search.toLowerCase())
+            user.first_name.toLowerCase().includes(search.toLowerCase()) ||
+            user.last_name.toLowerCase().includes(search.toLowerCase())
           );
         }
 
@@ -27,17 +27,17 @@ export class DatabaseMemory {
       });
   }
 
-  create(video: VideoData) {
-    const videoId = randomUUID();
+  create(user: UsersData) {
+    const userId = randomUUID();
 
-    this.#videos.set(videoId, video);
+    this.#users.set(userId, user);
   }
 
-  update(id: string, video: VideoData) {
-    this.#videos.set(id, video);
+  update(id: string, user: UsersData) {
+    this.#users.set(id, user);
   }
 
   delete(id: string) {
-    this.#videos.delete(id);
+    this.#users.delete(id);
   }
 }
