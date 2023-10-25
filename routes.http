@@ -1,4 +1,7 @@
-POST http://localhost:3333/users
+@baseUrl = http://localhost:3333
+
+###
+POST {{baseUrl}}/users
 Content-Type: application/json
 
 {
@@ -10,19 +13,15 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3333/users
+GET {{baseUrl}}/users
 
 ###
-PUT http://localhost:3333/users/760741e1-01b2-4890-91a8-fff6902429d4
+PATCH {{baseUrl}}/users/760741e1-01b2-4890-91a8-fff6902429d4
 Content-Type: application/json
 
 {
-  "first_name": "Lucas",
-  "last_name": "Gomes",
-  "user_name": "lucasgomes",
-  "email": "lucas.sbgomes@gmail.com",
-  "password": "123456789",
+  "first_name": "LucasE",
 }
 
 ###
-DELETE http://localhost:3333/users/760741e1-01b2-4890-91a8-fff6902429d4
+DELETE {{baseUrl}}/users/760741e1-01b2-4890-91a8-fff6902429d4
