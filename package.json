@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsup src",
     "start:dev": "tsx watch src/index.ts",
-    "start": "npm run build && node build/index.js",
+    "start": "npm run build && node dist/index.cjs",
     "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
     "lint": "eslint . --ext .ts",
     "format": "prettier --check --ignore-path .gitignore .",
